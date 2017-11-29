@@ -1,0 +1,26 @@
+{
+  "name": "fswitch",
+  "version": "1.0.0",
+  "description": "Functional switch statement",
+  "main": "./dist/es5/index.js",
+  "scripts": {
+    "build-es-next": "cross-env BABEL_ENV=es-next babel ./src --source-maps --out-dir ./dist/es-next",
+    "build-es5": "cross-env BABEL_ENV=es5 babel ./src --source-maps --out-dir ./dist/es5",
+    "build": "npm run build-es-next && npm run build-es5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GarthStevens/fswitch.git"
+  },
+  "author": "Garth Stevens",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GarthStevens/fswitch/issues"
+  },
+  "homepage": "https://github.com/GarthStevens/fswitch#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "cross-env": "^5.1.1"
+  }
+}

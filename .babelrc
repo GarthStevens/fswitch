@@ -1,0 +1,22 @@
+{
+  "presets": [
+    "env"
+  ],
+  "env": {
+    "es-next": {
+      "presets": [
+        [
+          "env",
+          {
+            "modules": false
+          }
+        ]
+      ]
+    },
+    "es5": {
+      "presets": [
+        "env"
+      ]
+    }
+  }
+}
